@@ -1,13 +1,29 @@
 
-body{
-    background-color: aquamarine;
-    text-align: center;
-}
-
 h3{
     color: blueviolet;
-}
-form{
-    display: inline;
     text-align: center;
+    padding: 5px;
+    background-color: rgb(245, 235,224);
+    border: solid 2px black;
+    border-radius: 5px;
+
 }
+.person{
+    text-align: center;
+    color: black;
+    background-color: rgb(213, 189, 175);
+    
+}
+div{
+    height: 250;
+    width: 250;
+    border: solid 2px black;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+body{
+    background-color: rgb(237, 237, 233);
+}
+
+
