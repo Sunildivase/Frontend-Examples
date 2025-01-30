@@ -1,29 +1,60 @@
-
-h3{
-    color: blueviolet;
-    text-align: center;
-    padding: 5px;
-    background-color: rgb(245, 235,224);
-    border: solid 2px black;
-    border-radius: 5px;
-
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('photo-1507525428034-b723cf961d3e.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.person{
-    text-align: center;
-    color: black;
-    background-color: rgb(213, 189, 175);
-    
-}
-div{
-    height: 250;
-    width: 250;
-    border: solid 2px black;
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
     border-radius: 10px;
-    display: inline-block;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: violet;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
     padding: 10px;
-}
-body{
-    background-color: rgb(237, 237, 233);
+    background-color: #63e3dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-
+button:hover {
+    background-color: #45a049;
+}

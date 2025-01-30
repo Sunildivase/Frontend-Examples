@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>healthcare-meanagement-system</title>
+    <title>Healthcare Management System</title>
     <link rel="stylesheet" href="homepage.css">
-    <script>
-
-    </script>
 </head>
 <body>
-    <div class="health">
-        <h1>Healthcare-Management-System</h1>
-    </div>
-    <br>
-    <div class="box">
-        <nav class="navbar">
-            <a href="Home">Home</a> 
-            <span><span><a href="person.html">Login</a></span></span>
-        </nav>
-    </div>
-    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">HealthCareSystem</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="person.html" class="login-btn">Person Login</a> </li>
+            <li><a href="#login" class="login-btn">Doctor Login</a> </li><!-- Login link added -->    
+            <li><a href="#login" class="login-btn">Resiption Login</a> </li><!-- Login link added -->    
+        </ul>
+    </nav>
+
+    <!-- Homepage Banner Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to the Healthcare Management System</h1>
+            <p>Your health is our priority. We provide easy and efficient healthcare solutions for everyone.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description" id="about">
+        <h2>About Our Healthcare Management System</h2>
+        <p>Our Healthcare Management System aims to simplify the medical process, enhancing the overall healthcare experience for patients and providers alike. We ensure that patients receive the best care through organized management of appointments, medical records, and services, all within an easy-to-use interface.</p>
+        <p>Our system streamlines the communication between patients, doctors, and healthcare providers to ensure quick responses and accurate medical history tracking.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 HealthCareSystem. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

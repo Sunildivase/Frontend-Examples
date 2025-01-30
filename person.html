@@ -3,69 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Person</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="person.css">
     <script>
+      document.getElementById('registrationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const personId = document.getElementById('personId').value;
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const age = document.getElementById('age').value;
+    const gender = document.getElementById('gender').value;
+    const contactNo = document.getElementById('contactNo').value;
+    const alternateNumber = document.getElementById('alternateNumber').value;
+    const address = document.getElementById('address').value;
+
+    if (personId && firstName && lastName && age && gender && contactNo && address) {
+        alert('Registration Successful!');
+        // Normally, here you would submit the data to a server.
+        console.log({
+            personId,
+            firstName,
+            lastName,
+            age,
+            gender,
+            contactNo,
+            alternateNumber,
+            address
+        });
+    } else {
+        alert('Please fill in all required fields.');
+    }
+});
 
     </script>
 </head>
 <body>
+    <div class="container">
+        <h2>Person Registration Form</h2>
+        <form id="registrationForm">
+            <label for="personId">Person ID</label>
+            <input type="text" id="personId" name="personId" required>
 
-      <h3>Person Registration Form</h3>
-      
-    <div class="person">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
 
-         <form action="">
-        
-           Enter Person Id: <input enter id type="number" name="id" id="id" placeholder="enter person id">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
 
-         <br><br>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
 
-         Select Person Type: 
-        <select name="type" id="type">
-            <option value="patient">patient</option>
-            <option value="customer">customer<option>
-        </select>
-        
-        <br><br>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
 
-        Enter First Name: <input type="text" name="fname" id="fname" placeholder="enter first name">
+            <label for="contactNo">Contact No</label>
+            <input type="text" id="contactNo" name="contactNo" required>
 
-        <br><br>
+            <label for="alternateNumber">Alternate Number</label>
+            <input type="text" id="alternateNumber" name="alternateNumber">
 
-        Enter Last Name: <input type="text" name="lname" id="lname" placeholder="last name"> 
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
 
-        <br><br>
-
-        Enter The Age: <input type="text" name="age" id="age" placeholder="enter the age">
-
-        <br><br>
-
-        Enter The Gender: 
-        Male:<input type="radio" name="gender" id="male">
-        Female:<input type="radio" name="gender" id="female">
-        Transgender: <input type="radio" name="gender" id="transgender">
-
-        <br><br>
-
-        Enter Contact Number:
-        <input type="number" name="contactNo" id="contactNo" placeholder="enter contact number">
-
-        <br><br>
-
-        Enter Alternate Number:
-        <input type="number" name="alternumber" id="alternumber" placeholder="enter alternate number">
-
-        <br><br>
-
-        Enter the Address:
-        <input type="text" name="address" id="address" placeholder="enter the address">
-
-        <br><br>
-
-        <input type="button" value="submit">
-       
-      </form>
+            <button type="submit">Register</button>
+        </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
